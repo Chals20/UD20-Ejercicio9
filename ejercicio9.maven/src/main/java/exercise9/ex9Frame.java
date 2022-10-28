@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.GridLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JToggleButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -148,6 +149,7 @@ public class ex9Frame extends JFrame {
 			System.out.println(e);
 		}
 
+
 		// Dar vuelta a las cartas
 		b1.addMouseListener(new MouseAdapter() {
 			@Override
@@ -159,7 +161,7 @@ public class ex9Frame extends JFrame {
 						if (!b1.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -182,6 +184,9 @@ public class ex9Frame extends JFrame {
 							b1.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -202,7 +207,7 @@ public class ex9Frame extends JFrame {
 						if (!b2.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -224,6 +229,9 @@ public class ex9Frame extends JFrame {
 							b2.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -244,7 +252,7 @@ public class ex9Frame extends JFrame {
 						if (!b3.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -266,6 +274,9 @@ public class ex9Frame extends JFrame {
 							b3.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -286,7 +297,7 @@ public class ex9Frame extends JFrame {
 						if (!b4.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -308,6 +319,9 @@ public class ex9Frame extends JFrame {
 							b4.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -328,7 +342,7 @@ public class ex9Frame extends JFrame {
 						if (!b5.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -350,6 +364,9 @@ public class ex9Frame extends JFrame {
 							b5.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -370,7 +387,7 @@ public class ex9Frame extends JFrame {
 						if (!b6.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -392,6 +409,9 @@ public class ex9Frame extends JFrame {
 							b6.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -412,7 +432,7 @@ public class ex9Frame extends JFrame {
 						if (!b7.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -434,6 +454,9 @@ public class ex9Frame extends JFrame {
 							b7.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -454,7 +477,7 @@ public class ex9Frame extends JFrame {
 						if (!b8.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -476,6 +499,9 @@ public class ex9Frame extends JFrame {
 							b8.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -496,7 +522,7 @@ public class ex9Frame extends JFrame {
 						if (!b9.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -518,6 +544,9 @@ public class ex9Frame extends JFrame {
 							b9.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -538,7 +567,7 @@ public class ex9Frame extends JFrame {
 						if (!b10.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -560,6 +589,9 @@ public class ex9Frame extends JFrame {
 							b10.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -580,7 +612,7 @@ public class ex9Frame extends JFrame {
 						if (!b11.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -602,6 +634,9 @@ public class ex9Frame extends JFrame {
 							b11.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -622,7 +657,7 @@ public class ex9Frame extends JFrame {
 						if (!b12.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -644,6 +679,9 @@ public class ex9Frame extends JFrame {
 							b12.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -664,7 +702,7 @@ public class ex9Frame extends JFrame {
 						if (!b13.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -686,6 +724,9 @@ public class ex9Frame extends JFrame {
 							b13.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -706,7 +747,7 @@ public class ex9Frame extends JFrame {
 						if (!b14.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -728,6 +769,9 @@ public class ex9Frame extends JFrame {
 							b14.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -748,7 +792,7 @@ public class ex9Frame extends JFrame {
 						if (!b15.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -770,6 +814,9 @@ public class ex9Frame extends JFrame {
 							b15.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
@@ -790,7 +837,7 @@ public class ex9Frame extends JFrame {
 						if (!b16.equals(primerBoton)) {
 							esPrimero++;
 						} else {
-							esPrimero = 0;
+							return;
 						}
 					} catch (Exception e) {
 						System.out.println("Has tocado dos veces el mismo botón");
@@ -812,6 +859,9 @@ public class ex9Frame extends JFrame {
 							b16.setEnabled(false);
 							primerBoton.setEnabled(false);
 							contVictoria++;
+							if (contVictoria == 8) {
+								JOptionPane.showMessageDialog(null, "Has ganado con " + contIntentos + " intentos. Enhorabuena!!!");
+							}
 						}
 						esPrimero = 0;
 					}
